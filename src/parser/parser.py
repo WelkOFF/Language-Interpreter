@@ -1,5 +1,5 @@
-from src import token_
-from src.ast_ import *
+from src.lexer import token_
+from src.ast.ast_ import *
 
 LOWEST = 1
 EQUALS = 2  # ==

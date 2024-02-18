@@ -1,6 +1,5 @@
 # Assuming the necessary imports or definitions of Program, LetStatement, Identifier, Token, and TokenType
-from src.ast_ import *
-from src.token_ import Token, TokenType
+from src.lexer.token_ import Token, TokenType
 
 
 def test_string():

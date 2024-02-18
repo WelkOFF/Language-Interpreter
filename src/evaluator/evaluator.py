@@ -1,6 +1,6 @@
-from src import ast_
-from src.environment import new_enclosed_environment
-from src.object import Boolean, Null, Error, ReturnValue, Integer, String, Function, Array, HashPair, Hash, Builtin
+from src.ast import ast_
+from src.object.environment import new_enclosed_environment
+from src.object.object import *
 
 NULL = Null()
 TRUE = Boolean(True)

@@ -1,4 +1,4 @@
-from src.token_ import Token, TokenType
+from src.lexer.token_ import Token, TokenType
 
 
 class Lexer:

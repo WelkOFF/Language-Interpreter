@@ -1,5 +1,5 @@
-from src.lexer import Lexer
-from src.parser import Parser
+from src.lexer.lexer import Lexer
+from src.parser.parser import Parser
 
 
 def test_let_statements():

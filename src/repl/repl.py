@@ -4,10 +4,10 @@ PROMPT = ">> "
 
 
 def start(in_stream=sys.stdin, out_stream=sys.stdout):
-    from environment import Environment
-    from lexer import Lexer
-    from parser import Parser
-    from evaluator import evaluate
+    from src.object.environment import Environment
+    from src.lexer.lexer import Lexer
+    from src.parser.parser import Parser
+    from src.evaluator.evaluator import evaluate
 
     env = Environment()
 

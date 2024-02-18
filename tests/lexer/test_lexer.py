@@ -1,5 +1,5 @@
-from src.lexer import Lexer
-from src.token_ import TokenType
+from src.lexer.lexer import Lexer
+from src.lexer.token_ import TokenType
 
 
 def test_next_token():
