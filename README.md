@@ -41,7 +41,7 @@ let greet = fn(name) { return "Hello, " + name + "!"; };
 greet(name);
 ```
 
-## Factorial Function
+## Factorial Function ( WIP )
 
 ```bash
 let arr = [1, 2, 3, 4, 5];
