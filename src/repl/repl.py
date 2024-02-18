@@ -1,5 +1,7 @@
 import sys
 
+from src.evaluator import evaluator
+
 PROMPT = ">> "
 
 
@@ -31,12 +33,23 @@ def start(in_stream=sys.stdin, out_stream=sys.stdout):
             out_stream.write(evaluated.inspect() + '\n')
 
 
+def start_with_file(filename: str):
+    from src.object.environment import Environment
+    from src.lexer.lexer import Lexer
+    from src.parser.parser import Parser
+
+    with open(filename, 'r') as file:
+        input_ = file.read()
+
+    lexer = Lexer(input_)
+    parser = Parser(lexer)
+    program = parser.parse_program()
+    env = Environment()
+    print(evaluator.evaluate(program, env).value)
+
+
 def print_parser_errors(out_stream, errors):
     out_stream.write("Woops! We ran into some monkey business here!\n")
     out_stream.write(" parser errors:\n")
     for msg in errors:
         out_stream.write("\t" + msg + "\n")
-
-
-if __name__ == "__main__":
-    start()

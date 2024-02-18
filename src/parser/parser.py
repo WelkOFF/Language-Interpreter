@@ -247,7 +247,7 @@ class Parser:
             if stmt is not None:
                 statements.append(stmt)
             self.next_token()
-        return BlockStatement(token=token)
+        return BlockStatement(token=token, statements=statements)
 
     def parse_statement(self):
         if self.cur_token_is(token_.TokenType.LET):

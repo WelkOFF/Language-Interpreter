@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from src.lexer.token_ import Token
+
 
 # Node and Expression Interfaces
 class Node(ABC):
@@ -89,9 +91,9 @@ class ExpressionStatement(Statement):
 
 
 class BlockStatement(Statement):
-    def __init__(self, token):
+    def __init__(self, token, statements):
         self.token = token
-        self.statements: List[Statement] = []
+        self.statements: List[Statement] = statements
 
     def statement_node(self):
         pass
@@ -283,7 +285,7 @@ class IndexExpression(Expression):
 
 
 class HashLiteral(Expression):
-    def __init__(self, token, pairs):
+    def __init__(self, token: Token, pairs):
         self.token = token
         # Ensure pairs is a dict with Expression keys and Expression values
         self.pairs = pairs
