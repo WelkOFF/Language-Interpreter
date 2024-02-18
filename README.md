@@ -20,7 +20,7 @@ Ensure you have Python 3.6 or later installed on your machine. You can verify yo
 Running the REPL
 To start the Monkey REPL, run the following command in the terminal:
 ```bash
-python repl.py
+python3 main.py
 ```
 
 You should see the prompt >> indicating that the REPL is ready to accept input. Try typing some Monkey code:
