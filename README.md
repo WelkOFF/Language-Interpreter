@@ -29,3 +29,31 @@ You should see the prompt >> indicating that the REPL is ready to accept input. 
 >> let add = fn(x, y) { return x + y; };
 >> add(5, 5);
 ```
+
+## Examples
+Here are some examples of what you can do with Monkey:
+
+## Variables and Functions
+
+```bash
+let name = "Monkey";
+let greet = fn(name) { return "Hello, " + name + "!"; };
+greet(name);
+```
+
+## Factorial Function
+
+```bash
+let arr = [1, 2, 3, 4, 5];
+let sumArray = fn(array) {
+    let sum = 0;
+    for (let i = 0; i < len(array); i = i + 1) {
+        sum = sum + array[i];
+    }
+    return sum;
+};
+sumArray(arr);
+
+let map = {"name": "Monkey", "age": 7};
+map["name"];
+```
