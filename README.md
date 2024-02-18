@@ -57,3 +57,14 @@ sumArray(arr);
 let map = {"name": "Monkey", "age": 7};
 map["name"];
 ```
+
+## Command Line Mode
+```bash
+python3 main.py
+```
+
+## File Interpreter Mode
+
+```bash
+python3 main.py filename1
+```
