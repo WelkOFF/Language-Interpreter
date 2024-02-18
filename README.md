@@ -17,3 +17,15 @@ Welcome to the Monkey programming language interpreter project! Monkey is a smal
 
 Ensure you have Python 3.6 or later installed on your machine. You can verify your Python version by running:
 
+Running the REPL
+To start the Monkey REPL, run the following command in the terminal:
+```bash
+python repl.py
+```
+
+You should see the prompt >> indicating that the REPL is ready to accept input. Try typing some Monkey code:
+
+```bash
+>> let add = fn(x, y) { return x + y; };
+>> add(5, 5);
+```
