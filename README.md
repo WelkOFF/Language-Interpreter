@@ -2,7 +2,7 @@
 
 Welcome to the Monkey programming language interpreter project! Monkey is a small, dynamically typed programming language designed for simplicity and learning. This interpreter is written in Python and allows you to execute Monkey programming language scripts and interact with the language through a Read-Eval-Print Loop (REPL).
 
-Created as an educational assignment for the **excellent** course [FMI Python Course 2023](https://fmipython.github.io/PythonCourse2023/README.html)
+Created as an educational assignment for the **EXCELLENT** course [FMI Python Course 2023](https://fmipython.github.io/PythonCourse2023/README.html)
 
 ## Features
 
